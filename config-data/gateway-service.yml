@@ -14,7 +14,7 @@ spring:
           enabled: true
       routes:
         - id: client_microservice
-          uri: http://localhost:client_microservice:8090
+          uri: http://localhost:8090
           predicates:
             - Path=/clients/**
         - id: bankingProduct_microservice
