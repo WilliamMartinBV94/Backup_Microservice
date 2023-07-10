@@ -11,7 +11,6 @@ import java.util.List;
 public class Client {
     @Id
     private String id;
-    private String nombre;
     private String name;
     private ClientType clientType;
     private List<BankAccount> bankAccounts;

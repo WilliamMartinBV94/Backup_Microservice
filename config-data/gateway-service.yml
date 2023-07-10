@@ -18,14 +18,14 @@ spring:
           predicates:
             - Path=/clients/**
         - id: bankingProduct_microservice
-          uri: lb://bankingProduct_microservice
+          uri: http://localhost:8091
           predicates:
             - Path=/banking-products/**
         - id: transaction_microservice
-          uri: lb://transaction_microservice
+          uri: http://localhost:8092
           predicates:
             - Path=/transactions/**
         - id: report_microservice
-          uri: lb://report_microservice
+          uri: http://localhost:8093
           predicates:
             - Path=/reports/**
